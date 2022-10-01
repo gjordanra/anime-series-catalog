@@ -1,20 +1,22 @@
 import Head from 'next/head'
+import { NextPage } from 'next';
+import Link from 'next/link';
 
-export default function Home() {
+const Home : NextPage = () => {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>MangaK LatinTV</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Welcome to <Link href="https://nextjs.org">MangaK LatinTV!</Link>
         </h1>
-
+  
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+        <Link href="/categorys/action">Action animes!</Link>
         </p>
 
         <div className="grid">
@@ -207,3 +209,4 @@ export default function Home() {
     </div>
   )
 }
+export default Home;
