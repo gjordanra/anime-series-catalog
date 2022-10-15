@@ -29,13 +29,14 @@ export const ApplicationWrapper:FC<PropsWithChildren <TProps>> = ({ title, descr
                 rel="noopener noreferrer"
                 >
                 Developed by {'Gustavo Jordan'}
-            </a>            
+            </a>  
+            |          
             <a
                 href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                Powered by {'RootStack/Vercel'}
+                Powered by {'RootStack / Vercel'}
             </a>
             
         </footer>
