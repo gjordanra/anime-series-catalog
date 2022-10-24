@@ -28,7 +28,7 @@ export const ApplicationWrapper:FC<PropsWithChildren <TProps>> = ({ title, descr
                 target="_blank"
                 rel="noopener noreferrer"
                 >
-                Developed by {'Gustavo Jordan'}
+                Developed by <span className="text-orange-500">{'Gustavo Jordan'}</span>
             </a>  
             |          
             <a
