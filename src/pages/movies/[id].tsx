@@ -3,6 +3,8 @@ import React from 'react'
 import { ApplicationWrapper } from '../../components/layout/ApplicationWrapper';
 import Movie from '../../components/MovieList/Movie/Movie';
 import { IMovie } from '../../components/MovieList/MovieList';
+import { useRouter } from 'next/router';
+import { FaBackward } from 'react-icons/fa';
 
 interface TProps {
     movie: IMovie;
@@ -10,13 +12,12 @@ interface TProps {
 
 const MovieDetailPage: NextPage<TProps> = ( {movie} ) => {
     console.log (movie);
+    const router = useRouter();
     return (
         <ApplicationWrapper title={movie.Title}>
             <div className='flex grow justify-center items-start gap-5 p-5'>
-              <div className='flex flex-col justify-start items-start'> 
-                  <a href={movie.Poster} target = "blank">
-                    back
-                  </a>
+              <div className='flex flex-row justify-ceter items-center gap-3' > 
+               <FaBackward onClick={() => router.back()}/> Back
               </div> 
               <div> 
                   <a href={movie.Poster} target = "blank">
