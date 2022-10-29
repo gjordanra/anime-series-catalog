@@ -25,8 +25,21 @@ const MovieDetailPage: NextPage<TProps> = ( {movie} ) => {
               </div> 
               <div className='flex flex-col justify-start'> 
                 <h1>Title: {movie.Title}</h1>
-                <h2>Distributor: {movie.Distributor}</h2>
-                <h2>Director: {movie.Director}</h2>
+                <h3>Release Date: {movie['Release Date']}</h3>
+                <h2>Major Genre: {movie['Major Genre']}</h2>
+                <h3>Running Time min: {movie['Running Time min']}</h3>
+                <h3>Director: {movie.Director}</h3>
+                <h3>Distributor: {movie.Distributor}</h3>
+                <h3>Creative Type: {movie['Creative Type']}</h3>
+                <h2>Winnings</h2>
+                <h2>Production Budget: {movie['Production Budget']}</h2>
+                <h2>US Gross: {movie['US Gross']}</h2>
+                <h3>Worldwide Gross: {movie['Worldwide Gross']}</h3>
+                <h3>US DVD Sales:{movie['US DVD Sales']}</h3>
+                <h2>Raitings</h2>
+                <h3>Rotten Tomatoes Rating: {movie['Rotten Tomatoes Rating']}</h3>
+                <h3>IMDB Rating: {movie['IMDB Rating']}</h3>
+                <h3>MPAA Rating: {movie['MPAA Rating']}</h3>
               </div>
             </div>
         </ApplicationWrapper>
