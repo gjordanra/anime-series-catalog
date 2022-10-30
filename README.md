@@ -6,4 +6,6 @@
 -on another terminal, from root folder run  
 `npm run dev`  
 -if you get message Next is not an internal command run  
- `npm i next`
+ `npm i next`  
+ I send my proyect withot today practice as I could not see the video from
+ today
